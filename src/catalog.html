@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>nerds-catalog</title>
+</head>
+<body>
+    <div class="header-container">
+        <header class="page-header container">
+            <div class="logo">
+                <img src="assets/img/nerds-logo.svg" width="160" height="65"  alt="логотип компании">
+            </div>
+            <nav class="page-nav">
+                <ul class="page-nav__list">
+                    <li class="page-nav__item"><a href="index.html">Студия</a></li>
+                    <li class="page-nav__item"><a href="#">Клиенты</a></li>
+                    <li class="page-nav__item"><a href="#">Магазин</a></li>
+                    <li class="page-nav__item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <ul class="user-block__list">
+                    <li class="user-block__item"><a href="#">Корзина</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <h1 class="catalog-page-title">Магазин готовых шаблонов</h1>
+    <div class="catalog__wrapper">
+        <form action="" method="get" class="catalog__form">
+            <fieldset class="catalog__price">
+                <legend>СТОИМОСТЬ:</legend>
+                <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                      <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                    </div>
+                  </div>
+            </fieldset>
+            <fieldset class="catalog__type">
+                <legend>Сетка:</legend>
+                <input type="radio" name="box" id="box1" checked>
+                <input type="radio" name="box" id="box2">
+                <input type="radio" name="box" id="box3">
+                <label for="box1">Адаптивная</label>
+                <label for="box2">Фиксированная</label>
+                <label for="box3">Резиновая</label>
+            </fieldset>
+            <fieldset class="catalog__features">
+                <legend>ОСОБЕННОСТИ:</legend>
+                <input type="checkbox" id="checkbox1">
+                <input type="checkbox" id="checkbox2">
+                <input type="checkbox" id="checkbox3">
+                <input type="checkbox" id="checkbox4">
+                <input type="checkbox" id="checkbox5">
+                <label for="checkbox1">Слайдер</label>
+                <label for="checkbox2">Блок преимуществ</label>
+                <label for="checkbox3">Новости</label>
+                <label for="checkbox4">Галерея</label>
+                <label for="checkbox5">Корзина</label>
+            </fieldset>
+            <input type="submit" value="ПОКАЗАТЬ">
+        </form>
+        <div class="catalog-list__wrapper">
+            <div class="catalog-list__filter">
+                <span>СОРТИРОВАТЬ:</span>
+                <form action="">
+                    <input type="radio" name="filter" id="filter1" checked>
+                    <label for="filter1">По цене</label>
+                    <input type="radio" name="filter" id="filter2">
+                    <label for="filter2">По типу</label>
+                    <input type="radio" name="filter" id="filter3">
+                    <label for="filter3">По названию</label>
+                    <button type="button" class="down"></button>
+                    <button type="button" class="up"></button>
+                </form>
+            </div>
+            <section class="catalog-list">
+                <div class="catalog-item">
+                    <div class="catalog-item__head"></div>
+                    <img src="assets/img/img-sedona.jpg" alt="">
+                    <div class="catalog-item__info">
+                        <h3 class="catalog-item__title">Sedona</h3>
+                        <p class="catalog-item__text">Информационный сайт 
+                            для туристов</p>
+                        <a href="#" class="catalog-item__link">9 900 руб.</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__head"></div>
+                    <img src="assets/img/img-pink.jpg" alt="">
+                    <div class="catalog-item__info">
+                        <h3 class="catalog-item__title">Pink App</h3>
+                        <p class="catalog-item__text">Продуктовый лендинг
+                            приложения для iOS и Android</p>
+                        <a href="#" class="catalog-item__link">9 900 руб.</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__head"></div>
+                    <img src="assets/img/img-barbershop.jpg" alt="">
+                    <div class="catalog-item__info">
+                        <h3 class="catalog-item__title">Barbershop</h3>
+                        <p class="catalog-item__text">Сайт салоны красоты.Для мужчин, да.</p>
+                        <a href="#" class="catalog-item__link">9 900 руб.</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__head"></div>
+                    <img src="assets/img/img-mishka.jpg" alt="">
+                    <div class="catalog-item__info">
+                        <h3 class="catalog-item__title">MISHKA</h3>
+                        <p class="catalog-item__text">Интернет-магазин 
+                            вязаных игрушек</p>
+                        <a href="#" class="catalog-item__link">9 900 руб.</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__head"></div>
+                    <img src="assets/img/img-aplus.jpg" alt="">
+                    <div class="catalog-item__info">
+                        <h3 class="catalog-item__title">A Plus</h3>
+                        <p class="catalog-item__text">Лендинг курсов повышения квалификации</p>
+                        <a href="#" class="catalog-item__link">9 900 руб.</a>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__head"></div>
+                    <img src="assets/img/img-kvast.jpg" alt="">
+                    <div class="catalog-item__info">
+                        <h3 class="catalog-item__title">КВАСТ</h3>
+                        <p class="catalog-item__text">Промо-сайт производителя
+                            крафтового кваса</p>
+                        <a href="#" class="catalog-item__link">9 900 руб.</a>
+                    </div>
+                </div>
+            </section>
+            <div class="paginator">
+                <a href="#1" class="current">1</a>
+                <a href="#2">2</a>
+                <a href="#3">3</a>
+                <a class="next" href="#next">следующая</a>
+            </div>
+        </div>
+    </div>
+    <section class="map">
+        <img src="assets/img/map.jpg" alt="">
+        <div class="map__wrapper">
+            <section class="map__info">
+                <h3 class="map__title">NЁRDS DESIGN STUDIO</h3>
+                <p class="map__address">
+                    191186, Санкт-Петербург,<br> 
+                    ул. Б. Конюшенная, д. 19/8
+                </p>
+                <p class="map__tel">
+                    тел. +7 (812) 275-75-75
+                </p>
+                <a href="#" class="map__link">Напишите нам</a>
+            </section>
+            <img src="assets/img/map-marker.png" alt="" class="map__marker">
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <section class="page-footer__links">
+            <a href="#" class="page-footer__link page-footer__link--vk">vkontakte</a>
+            <a href="#" class="page-footer__link page-footer__link--fb">facebook</a>
+            <a href="#" class="page-footer__link page-footer__link--insta">instagram</a>
+        </section>
+        <section class="page-footer__text">
+            <b class="page-footer__title">
+                Давайте дружить, это выгодно!
+            </b>
+            <p class="page-footer__discount">
+                Скидка 10% для друзей из социальных сетей.
+            </p>
+        </section>
+    </footer>
+
+    <section class="modal">
+        <span class="modal__close"></span>
+        <h3 class="modal__title">Напишите нам</h3>
+        <form action="#" method="get">
+            <div class="modal__wrapper">
+                <label>Ваше имя:<br>
+                    <input type="text" placeholder="Имя Фамилия">
+                </label>
+                <label>Ваш e-mail:<br>
+                    <input type="email" placeholder="email@example.com">
+                </label>
+            </div>
+            <label>Текст письма:<br>
+                <textarea rows="5" placeholder="В свободной форме"></textarea>
+            </label>
+            <input type="submit" value="ОТПРАВИТЬ">
+        </form>
+    </section>
+    <script src="assets/js/components/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 960px;
+    height: 590px;
+    padding: 75px 100px 85px 100px;
+    background-color: #fff;
+    box-shadow: 0 40px 20px 0 rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal__title {
+    font-size: 45px;
+    line-height: 45px;
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+
+.modal input[type="text"],
+.modal input[type="email"] {
+    width: 360px;
+    padding: 14px;
+    border: 2px solid #d7dcde;
+    &:hover {
+        border-color: #b4b9bb;
+    }
+    &:focus {
+        border-color: #000;
+    }
+    &:invalid {
+        border-color: #e74246;
+        color: #e74246
+    }
+}
+
+.modal textarea {
+    width: 100%;
+    max-height: 120px;
+    padding: 14px;
+    border: 2px solid #d7dcde;
+    &:hover {
+        border-color: #b4b9bb;
+    }
+    &:focus {
+        border-color: #000;
+    }
+}
+
+.modal input[type="submit"] {
+    @include button-reset;
+    padding: 18px 84px;
+    color: #fff;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    border-radius: 5px;
+    &:hover {
+        background-color: #e74246;
+    }
+    &:active {
+        background-color: #d7373b;
+        box-shadow: inset 0 3px 0 0 #c13135;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.modal__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.modal label {
+    font-weight: 700;
+}
+
+.modal__close {
+    position: absolute;
+    top: 80px;
+    right: 90px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/close-cross.svg") no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:active {
+        opacity: 0.1;
+    }
+}
+
+.modal__show {
+    display: block;
+}

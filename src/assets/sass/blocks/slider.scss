@@ -1,0 +1,135 @@
+.slider-container {
+    position: relative;
+    background-color:#eee;
+    height: 433px;
+}
+
+.slider-container > input {
+    position: absolute;
+    opacity: 0;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 318px;
+    left: 50%;
+    width: 88px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.slider-controls label {
+    display: inline-block;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.slider-controls label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+#slide1:checked ~ .slider-controls label[for="slide1"],
+#slide2:checked ~ .slider-controls label[for="slide2"],
+#slide3:checked ~ .slider-controls label[for="slide3"] {
+    border-color: #eee;
+}
+
+.slider {
+    position: relative;
+    width: 1160px;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 88px;
+    opacity: 0;
+    z-index: 0;
+    transition:  opacity ease 0.5s,
+                z-index ease 0.5s;
+}
+
+.slide:nth-child(1) {
+    background: url("../img/slide1.png") no-repeat 90% bottom;
+}
+
+.slide:nth-child(2) {
+    background: url("../img/slide2.png") no-repeat 90% bottom;
+}
+
+.slide:nth-child(3) {
+    background: url("../img/slide3.png") no-repeat 90% bottom;
+}
+
+#slide1:checked ~ .slider .slide:nth-child(1) {
+    opacity: 1;
+    z-index: 1;
+}
+
+#slide2:checked ~ .slider .slide:nth-child(2) {
+    opacity: 1;
+    z-index: 1;
+}
+
+#slide3:checked ~ .slider .slide:nth-child(3) {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide__title {
+    width: 560px;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 29px;
+}
+
+.slide__text {
+    width: 460px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+}
+
+.slide__link {
+    color: #fff;
+    line-height: 16px;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    padding: 18px 53px;
+    border-radius: 5px;
+    transition: background-color ease 0.5s;
+    &:hover {
+        background-color: #e74246;
+    }
+    &:active {
+        background-color: #d7373b;
+        box-shadow: inset 0 3px 0 0 #c13135;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}

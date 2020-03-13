@@ -1,0 +1,82 @@
+@import "mixins";
+
+.page-footer {
+    width: 1160px;
+    min-height: 216px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.page-footer__links {
+    min-width: 260px;
+    height: 80px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-footer__link {
+    position: relative;
+    font-size: 0;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #eee;
+    transition: background-color ease 0.5s;
+    &:hover {
+        background-color: #e74246;
+    }
+    &:active {
+        background-color: #d7373b;
+    }
+    &:active::before {
+        opacity: 0.3;
+    }
+}
+
+.page-footer__link--vk::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/vk-icon.svg") no-repeat center center;
+}
+
+.page-footer__link--fb::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/fb-icon.svg") no-repeat center center;
+}
+
+.page-footer__link--insta::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/insta-icon.svg") no-repeat center center;
+}
+
+.page-footer__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.page-footer__discount {
+    padding: 0;
+    margin: 0;
+}

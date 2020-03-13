@@ -1,0 +1,18 @@
+@import "variables";
+
+@import "mixins";
+
+//@import "../node_modules/normalize.css/normalize";
+
+@import "general";
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/slider";
+@import "blocks/services";
+@import "blocks/info";
+@import "blocks/templates";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/catalog";
