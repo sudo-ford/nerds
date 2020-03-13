@@ -2,3 +2,4 @@ node_modules/
 package-lock.json
 Thumbs.db
 .vscode
+dist/

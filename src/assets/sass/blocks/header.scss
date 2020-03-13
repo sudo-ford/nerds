@@ -3,6 +3,7 @@
     justify-content: space-between;
     max-width: 1160px;
     min-height: 115px;
+    margin: 0 auto;
 }
 
 .header-container {
@@ -51,7 +52,7 @@
             width: 15px;
             height: 15px;
             position: absolute;
-            top: 5px;
+            top: 4px;
             left: 0;
             background: url("../img/cart-icon.svg") no-repeat;
         }
