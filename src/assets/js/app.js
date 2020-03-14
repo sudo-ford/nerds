@@ -1,1 +1,1 @@
- //= components/modal.js
+//= components/modal.js
